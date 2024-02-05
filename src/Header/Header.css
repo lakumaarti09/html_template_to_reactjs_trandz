@@ -1,0 +1,313 @@
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+header {
+  display: block;
+}
+
+.header-section {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+
+.navbar {
+  display: flex; 
+  justify-content:space-between; 
+  padding: 1rem 2rem; 
+  background:black;  
+}
+.a2-bg{
+  background:black; 
+}
+
+.nav-list{
+  display: flex; 
+  list-style: none; 
+ 
+}
+
+
+.nav-list li {
+  padding-left: 2rem; 
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 900;
+  color: #cfd8dc;
+  padding-top: 2rem !important;
+  padding-bottom: 1rem !important;
+   
+}
+.res-nav-list{
+
+  display: block; 
+  list-style: none; 
+  display: none;
+
+}
+.res-nav-list li{
+
+  padding-left: 2rem; 
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 900;
+  color: #cfd8dc;
+  padding-top: 2rem !important;
+  padding-bottom: 1rem !important;
+  
+}
+
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+
+ 
+}
+
+.navbar h4{
+
+  color: #cfd8dc;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  
+}
+.navbar a{
+
+  text-decoration: none;
+  /* transition: color 0.3s ease-in-out; */
+  color: #fff
+ 
+}
+.navbar a:hover{
+
+  color: #9AD953;
+}
+.res-div{
+  display: block;
+  display: none;
+
+}
+.menu-icon {
+  display: block;
+  font-size: 45px;
+  cursor: pointer !important;
+  color:#9AD953;
+  /* text-align: right; */
+  background-color: black;
+  padding: 10px;
+  display: none;
+}
+.cmn-btn {
+  background-color:#9AD953;
+  color: white;
+  font-weight: 500;
+  border-radius: 12px;
+  /* transition: var(--transition); */
+  text-transform: capitalize;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  display: inline-flex;
+  white-space: nowrap;
+}
+.res-cmn-btn{
+
+  background-color:#9AD953;
+  color: white;
+  font-weight: 500;
+  border-radius: 12px;
+  /* transition: var(--transition); */
+  text-transform: capitalize;
+  position: relative;
+  overflow: hidden;
+  /* cursor: pointer; */
+  z-index: 1;
+  display: inline-flex;
+  white-space: nowrap;
+
+}
+button{
+  text-transform: none;
+  border-radius: 1rem;
+}
+.custom-icon{
+
+ 
+  font-size: 13px; /* Change the font size to your preference */
+  
+ 
+}
+
+.submenu{
+  position: absolute;
+  text-decoration: none;
+  background:rgb(13, 12, 12);
+  width: 180px;
+  margin-left: -50px;
+  text-decoration: none;
+  color:#9AD953;
+  list-style: none;
+  top: 80px;
+  padding: 0px;
+  border-radius:  0 0 10px 10px;
+  z-index: 3;
+  letter-spacing: 1px;
+  /* border-top: 1px solid white ; */
+  
+
+
+}
+.submenu li{
+  margin: 0px 0;
+  font-size: 15px;
+  font-family: 'Bebas Neue', sans-serif ;
+  /* font-weight: 500 !important; */
+  padding: 5px;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  margin-left: 20px;
+  color:#fff;
+
+
+}
+.submenu li:hover{
+
+  color:#9AD953;
+
+}
+.submenu2{
+  /* position: absolute; */
+  text-decoration: none;
+  background:#000;
+  width: 220px;
+  margin-left: -50px;
+  text-decoration: none;
+  color:#9AD953;
+  list-style: none;
+  top: 80px;
+  padding: 22px;
+  border-radius:  0 0 10px 10px;
+  z-index: 3;
+  letter-spacing: 1px;
+  /* border-top: 1px solid white ; */
+  
+
+
+}
+.submenu2 li{
+  margin: 0px 0;
+  font-size: 16px;
+  font-family: 'Bebas Neue', sans-serif ;
+  /* font-weight: 500 !important; */
+  padding: 5px;
+  padding-top: 5px !important;
+  padding-bottom: 0px !important;
+  margin-left: 20px;
+  color:#fff;
+
+
+}
+.submenu2 li:hover{
+
+  color:#9AD953;
+
+}
+
+
+
+
+@media (max-width: 600px) {
+  .navbar {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content:flex-start; 
+      
+  }
+  .navbar a:hover{
+
+    color: #9AD953;
+  }
+  .submenu li:hover{
+
+    color:#9AD953;
+  
+  }
+  .menu-icon {
+    display: block;
+  }
+  .res-nav-list{
+
+    display: block;
+
+  }
+  .nav-list{
+    display: none;
+
+  }
+  .res-div{
+
+    display: flex;
+
+  }
+  .cmn-btn{
+
+    display: none;
+
+  }
+  
+
+
+
+
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content:flex-start; 
+    
+}
+.navbar a:hover{
+
+  color: #9AD953;
+}
+.submenu li:hover{
+
+  color:#9AD953;
+
+}
+.menu-icon {
+  display: block;
+}
+.res-nav-list{
+
+  display: block;
+
+}
+.nav-list{
+  display: none;
+
+}
+.res-div{
+
+  display: flex;
+
+}
+.cmn-btn{
+
+  display: none;
+
+}
+
+
+
+}
